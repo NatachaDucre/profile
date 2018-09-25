@@ -1,17 +1,46 @@
+#sidebar {
+  background-color: #384047;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 120px;
+}
+#sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+  margin: 20px;
+}
+#sidebar li {
+  margin: 20px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #788188;
+  font-size: 25px;
+}
+
+#sidebar a:hover {
+  color: #fa8354
+}
+
 body {
-    background: #EBEBEB;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.6em;
-    color: #7d7d7d;
+  background: #EBEBEB;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #7d7d7d;
 }
 
 h1, h2, h3 {
-    color: #4A4A4A;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+  color: #4A4A4A;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 h1 {
@@ -22,6 +51,13 @@ h1 {
 
 h3 {
   color: #928B8B;
+  padding-top: 20px;
+  line-height: 0.3;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 a {
@@ -39,15 +75,15 @@ a:hover {
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 div {
@@ -55,13 +91,14 @@ div {
 }
 
 .img_long {
-    width: 100px;
-    margin: 7px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2)
+  width: 210px;
+  margin: 2px;
+  margin-right: 15px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3)
 }
 
 #img_circle {
-  width: 100px;
+  width: 150px;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
@@ -72,12 +109,29 @@ table {
   text-align: left;
 }
 
-li {
+.list-icons {
  display: inline;
  margin: 10px;
  font-size: 17px;
 }
 
+.list-inline {
+  padding-left: 0px;
+}
+
+.btn-red {
+  background-color: #fa8354;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 50px;
+}
+
+.btn-red:hover {
+  color: white;
+  background-color: #ff653f;
+}
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -100,22 +154,3 @@ li {
     width: 70px;
   }
 }
-
-.list-inline {
-  padding-left: 0px;
-}
-
-.btn-red {
-    background-color: #fa8354;
-    color: white;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 4px;
-    margin: 15px;
-}
-
-.btn-red:hover {
-  color: white;
-  background-color: #ff653f;
-}
-
