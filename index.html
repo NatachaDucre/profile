@@ -3,90 +3,99 @@
 <head>
   <meta charset="utf-8">
   <title>My first page</title>
+  <script src="https://npmcdn.com/vue/dist/vue.js"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" target="_blank">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
 </head>
 <body>
-  <div id="sidebar">
-    <ul>
-      <li><a href="#summary"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
-      <li><a href="#favorites-movies"><i class="fa fa-film" aria-hidden="true"></i></a></li>
-      <li><a href="#footer"><i class="fa fa-life-ring" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
-  <div id="content">
-    <div class="container">
-      <div class="card text-center" id="summary">
-        <img src="images/profile.jpg" id="img_circle" alt="Natacha Ducre" >
-        <h1> Natacha Ducré </h1>
-        <h2> Développeuse junior </h2>
-        <p>
-          Issue d’un parcours dans le bien-être alternatif, je suis tombée amoureuse du code et j’ai décidé de changer de carrière.
-          Diplômée du Wagon, je poursuis désormais une nouvelle vocation :
-          mettre la programmation au service du développement d’outils innovants.
-        </p>
-        <a href="images/CVNDucre.pdf" class="btn-red">Mon CV</a>
-      </div>
-
-      <div class="card text-center">
-        <ul class="list-inline">
-          <li class="list-icons"><a href="https://www.facebook.com/natacha.ducre"><i class="fa fa-facebook-square" aria-hidden="true"></i>
-          Facebook</a></li>
-          <li class="list-icons"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-          <li class="list-icons"><a href="https://github.com/NatachaDucre"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
-        </ul>
-      </div>
-
-      <div class="card text-center" id="favorites-movies">
-        <h2> Mes projets</h2>
-        <table>
-          <tr>
-            <td><img src="images/walk.jpg" class="img_long" alt="Green Mile"></td>
-            <td>
-              <h3>TRAFIC DE DOGS</h3>
-              <p>
-                <strong>Novembre 2017<br></strong>
-                Site de prise en charge des animaux sur le modèle d'Airbnb.<br>
-                <i>Travail en équipe réalisé en 5 jour.<br></i>
-                <a href="http://traficdedogs.herokuapp.com/" class="list-icons">Voir</a>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="images/slumdog-millionaire-a07.jpg" class="img_long" alt="Slumdog Millionaire"></td>
-            <td>
-              <h3>Slumdog Millionaire</h3>
-              <p>
-                A Mumbai teen reflects on his upbringing in the slums when he is accused of cheating on the Indian Version of "Who Wants to be a Millionaire?"
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="images/LOTRFOTRmovie.jpg" class="img_long" alt="Lord of the ring"></td>
-            <td>
-              <h3>The Lord of the Rings</h3>
-              <p>
-                A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="card text-center">
-        <h2>About</h2>
+  <div id="app">
+    <div id="sidebar">
+      <ul>
+        <li><a href="#summary"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+        <li><a href="#favorites-movies"><i class="fa fa-film" aria-hidden="true"></i></a></li>
+        <li><a href="#footer"><i class="fa fa-life-ring" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <div class="container">
+        <div class="card text-center" id="summary">
+          <img src="images/profile.jpg" id="img_circle" alt="Natacha Ducre" >
+          <h1> Natacha Ducré </h1>
+          <h2> Développeuse junior </h2>
           <p>
-            This page has been coded during the <a href="http://www.lewagon.com">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.
+            Issue d’un parcours dans le bien-être alternatif, je suis tombée amoureuse du code et j’ai décidé de changer de carrière.
+            Diplômée du Wagon, je poursuis désormais une nouvelle vocation :
+            mettre la programmation au service du développement d’outils innovants.
           </p>
-          <ul class="list-inline" id="footer">
-            <li class="list-icons"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-            <li class="list-icons"><a href="#"><i class="fa fa-share" aria-hidden="true"></i></i></a></li>
-            <li class="list-icons"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+          <a href="images/CVNDucre.pdf" class="btn-red">Mon CV</a>
+        </div>
+
+        <div class="card text-center">
+          <ul class="list-inline">
+            <li class="list-icons"><a href="https://www.facebook.com/natacha.ducre"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+            Facebook</a></li>
+            <li class="list-icons"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+            <li class="list-icons"><a href="https://github.com/NatachaDucre"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
           </ul>
+        </div>
+
+        <div class="card text-center" id="favorites-movies">
+          <h2> Mes expériences professionelles</h2>
+          <h3> Sydo, Agence de conseil en pédagogie</h3>
+          <table>
+            <template v-for="element in profesional[0]">
+              <h3 v-for="value in element">{{ value.name }}</h3>
+                <tr v-for=" project in value.projects">
+                  <td><img :src=" project.image" class="img_long" alt="Green Mile"></td>
+                  <td>
+                    <!-- <h3>{{ element.type.name }}</h3>
+                    <p>
+                      <strong>{{ project.date }}<br></strong>
+                      {{ project.description }}<br>
+                      <a :href=" project.link " class="list-icons icon-project">Voir</a> -->
+                    </p>
+                  </td>
+                </tr>
+              <tr>
+            </template>
+
+          </table>
+        </div>
+
+        <div class="card text-center" id="favorites-movies">
+          <h2> Mes projets</h2>
+          <table>
+              <tr v-for="project in myProjects">
+                <td><img :src=" project.image" class="img_long" alt="Green Mile"></td>
+                <td>
+                  <h3>{{ project.title }}</h3>
+                  <p>
+                    <strong>{{ project.date }}<br></strong>
+                    {{ project.description }}<br>
+                    <a :href=" project.link " class="list-icons icon-project">Voir</a>
+                  </p>
+                </td>
+              </tr>
+            <tr>
+          </table>
+        </div>
+
+        <div class="card text-center">
+          <h2>About</h2>
+            <p>
+              This page has been coded during the <a href="http://www.lewagon.com">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.
+            </p>
+            <ul class="list-inline" id="footer">
+              <li class="list-icons"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+              <li class="list-icons"><a href="#"><i class="fa fa-share" aria-hidden="true"></i></i></a></li>
+              <li class="list-icons"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
       </div>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
