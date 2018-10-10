@@ -41,28 +41,32 @@
           </ul>
         </div>
 
-        <!-- <div class="card text-center" id="favorites-movies">
+        <div class="card text-center" id="sydo">
           <h2> Mes expériences professionelles</h2>
           <h3> Sydo, Agence de conseil en pédagogie</h3>
-          <table>
-            <template v-for="element in profesional[0]">
-              <h3 v-for="value in element">{{ value.name }}</h3>
-                <tr v-for=" project in value.projects">
-                  <td><img :src=" project.image" class="img_long" alt="Green Mile"></td>
-                  <td>
-                  <h3>{{ element.type.name }}</h3>
-                    <p>
-                      <strong>{{ project.date }}<br></strong>
-                      {{ project.description }}<br>
-                      <a :href=" project.link " class="list-icons icon-project">Voir</a>
-                    </p>
-                  </td>
-                </tr>
-              <tr>
-            </template>
-
+          <template v-for="value in profesional">
+          <table v-for="element in value.type">
+            <tr>
+              <td><h3>{{ element.name }}</h3>
+              </td>
+            </tr>
+            <tr>
+              <td><h3 id="description">{{ element.description }}</h3><br>
+              <h3 id="description" v-if="element.description2">{{ element.description2 }}</h3>
+              </td>
+            </tr>
+            <tr v-for="proj in element.projects">
+              <td><img :src="proj.image" class="img-thumbnail rounded float-left" alt="Green Mile"></td>
+              <td>
+                <p>
+                  <strong> {{ proj.name }}<br></strong>
+                  <a v-if="proj.link" :href=" proj.link " class="list-icons icon-project">Lien</a>
+                </p>
+              </td>
+            </tr>
           </table>
-        </div> -->
+        </template>
+        </div>
 
         <div class="card text-center" id="favorites-movies">
           <h2> Mes projets</h2>
@@ -78,7 +82,6 @@
                   </p>
                 </td>
               </tr>
-            <tr>
           </table>
         </div>
 
