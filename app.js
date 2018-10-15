@@ -48,19 +48,19 @@ var nV = new Vue({
           description2: "Intéractions:",
             projects: [
               {
-                image: "images/Compass.png",
+                image: "images/casseBrick.png",
                 name: "Casse-brick"
               },
               {
-                image: "images/tilkee.png",
+                image: "images/quiz.png",
                 name: "Quiz"
               },
               {
-                image: "images/tilkee.png",
+                image: "images/sondage.png",
                 name: "Sondage"
               },
               {
-                image: "images/tilkee.png",
+                image: "images/mots.png",
                 name: "Nuage de mots"
               }
             ]

@@ -14,6 +14,7 @@
     <div id="sidebar">
       <ul>
         <li><a href="#summary"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+        <li><a href="#titleProject"><i class="fa fa-paste" aria-hidden="true"></i></a></li>
         <li><a href="#favorites-movies"><i class="fa fa-film" aria-hidden="true"></i></a></li>
         <li><a href="#footer"><i class="fa fa-life-ring" aria-hidden="true"></i></a></li>
       </ul>
@@ -36,7 +37,7 @@
           <ul class="list-inline">
             <li class="list-icons"><a href="https://www.facebook.com/natacha.ducre"><i class="fa fa-facebook-square" aria-hidden="true"></i>
             Facebook</a></li>
-            <li class="list-icons"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+            <li class="list-icons"><a href="https://www.linkedin.com/in/natacha-ducr%C3%A9-97091ab2/"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
             <li class="list-icons"><a href="https://github.com/NatachaDucre"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
           </ul>
         </div>
@@ -47,19 +48,19 @@
           <template v-for="value in profesional">
           <table v-for="element in value.type">
             <tr>
-              <td><h3>{{ element.name }}</h3>
+              <td><h3 id="titleProject">{{ element.name }}</h3>
               </td>
             </tr>
             <tr>
               <td><h3 id="description">{{ element.description }}</h3><br>
-              <h3 id="description" v-if="element.description2">{{ element.description2 }}</h3>
+              <h3 id="description2" v-if="element.description2">{{ element.description2 }}</h3>
               </td>
             </tr>
             <tr v-for="proj in element.projects">
               <td><img :src="proj.image" class="img-thumbnail rounded float-left" alt="Green Mile"></td>
               <td>
                 <p>
-                  <strong> {{ proj.name }}<br></strong>
+                  <strong>{{ proj.name }}<br></strong>
                   <a v-if="proj.link" :href=" proj.link " class="list-icons icon-project">Lien</a>
                 </p>
               </td>
